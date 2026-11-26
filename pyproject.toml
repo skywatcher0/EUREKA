@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eureka-symbolic-regression"
+version = "0.1.0"
+description = "Learn executable regression equations from data collected in multiple environments"
+readme = "README.md"
+requires-python = ">=3.12,<3.15"
+dependencies = [
+    "numpy==2.4.6",
+    "scipy==1.17.1",
+    "pandas==2.3.3",
+    "threadpoolctl==3.6.0",
+]
+
+[project.optional-dependencies]
+benchmarks = ["openpyxl==3.1.5", "xlrd==2.0.2", "scikit-learn==1.8.0"]
+
+[project.scripts]
+eureka = "eureka.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = false
+
+[tool.setuptools.package-data]
+eureka = ["data/*.csv", "data/uci/*.zip", "data/dgreg/*", "data/wind/*"]

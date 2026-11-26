@@ -1,0 +1,14 @@
+{
+  "dataset_name": "cc_wt_bernoulli_v1_high_speed_clean",
+  "target_name": "pressure_upwind_minus_downwind_corrected",
+  "feature_names": [
+    "rpm_in_normalized"
+  ],
+  "realshift_protocol": "realshift_v1_20261102",
+  "split_fingerprint": "dfc8341472390a948c07de410813edda83dc7bab5314c4b0ba6a273689aa8c27",
+  "x_scaler": null,
+  "y_scaler": {
+    "mean": 2.25616173846317,
+    "scale": 2.6205570123742437
+  }
+}
