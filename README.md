@@ -90,3 +90,7 @@ eureka benchmark wind --prepared-wind downloads/wind --check --out runs/wind-fro
 ~~~
 
 See [data sources and transformations](DATA.md) for the upstream download and the input definitions.
+
+## License
+
+EUREKA's source code is licensed under the [MIT License](LICENSE). See [DATA.md](DATA.md) for the licenses and attribution of bundled datasets.
